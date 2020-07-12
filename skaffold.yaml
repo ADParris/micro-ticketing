@@ -8,7 +8,7 @@ build:
   local:
     push: false
   artifacts:
-    - image: adparris/ticketing/auth
+    - image: adparris/ticketing-auth
       context: auth
       docker:
         dockerfile: Dockerfile
