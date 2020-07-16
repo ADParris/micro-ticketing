@@ -1,7 +1,7 @@
 FROM node:alpine
 WORKDIR /home/app
-RUN apk update && apk add yarn
+RUN apk update
 COPY package.json ./
-RUN yarn install --production
+RUN npm install --only=prod
 COPY ./ ./
-CMD ["yarn","run", "dev"]
+CMD ["npm","run", "dev"]

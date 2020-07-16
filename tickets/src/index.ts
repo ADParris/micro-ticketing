@@ -12,12 +12,12 @@ const start = async () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
-    console.log('Auth server is connected to MongoDB.');
+    console.log('Tickets server is connected to MongoDB.');
   } catch (error) {
     console.error(error.message);
   }
   app.listen(PORT, () =>
-    console.log(`Auth server is listening on port ${PORT}...`)
+    console.log(`Tickets server is listening on port ${PORT}...`)
   );
 };
 
